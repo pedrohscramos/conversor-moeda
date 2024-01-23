@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  `
 })
-export class AppComponent {
-  title = 'conversor-moeda';
-}
+export class AppComponent {}

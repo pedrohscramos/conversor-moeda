@@ -1,0 +1,19 @@
+@import "../../../../config-scss/variaveis.scss";
+
+@function rem-calc($size) {
+  $value: calc($size / 16);
+  @return #{$value}rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    align-items: self-start;
+    margin-top: 90px;
+  }
+}

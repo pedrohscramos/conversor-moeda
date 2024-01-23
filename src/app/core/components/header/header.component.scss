@@ -1,0 +1,21 @@
+@import "../../../../styles.scss";
+
+@function rem-calc($size) {
+  $value: calc($size / 16);
+  @return #{$value}rem;
+}
+
+:host {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--header-background);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    padding: rem-calc(20) 0;
+  }
+}
